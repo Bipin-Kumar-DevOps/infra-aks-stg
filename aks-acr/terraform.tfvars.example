@@ -1,0 +1,11 @@
+location                 = "centralindia"
+name_prefix              = "axion"
+environment              = "dev"
+kubernetes_version       = null
+admin_allowed_ip_ranges  = ["203.0.113.10/32"]
+log_retention_days       = 30
+
+tags = {
+  owner       = "platform-team"
+  cost_center = "engineering"
+}
