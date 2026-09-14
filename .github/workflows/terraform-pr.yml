@@ -3,8 +3,8 @@ name: Terraform PR
 on:
   pull_request:
     paths:
-      - "**/*.tf"
-      - "*.tfvars.example"
+      - "aks-acr/**/*.tf"
+      - "aks-acr/*.tfvars.example"
       - ".github/workflows/terraform-pr.yml"
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ permissions:
 env:
   TF_IN_AUTOMATION: true
   TF_INPUT: false
-  TF_WORKING_DIR: .
+  TF_WORKING_DIR: aks-acr
 
 jobs:
   plan:
